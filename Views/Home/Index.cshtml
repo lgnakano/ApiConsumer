@@ -1,7 +1,15 @@
-﻿@{
+﻿@model Parks
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Hello, World!</h1>
 </div>
+
+@foreach(Park park in Model.data)
+{
+    @(park.parkCode + " " + park.fullName + " " + park.latLong + " ")
+    <br />
+}
