@@ -16,8 +16,12 @@ namespace ApiConsumer.Controllers
 
         HttpClient httpClient;
 
+        // Obtaining the API key is easy. The same key should be usable across the entire
+        // data.gov developer network, i.e. all data sources on data.gov.
+        // https://www.nps.gov/subjects/developer/get-started.htm
+
         static string BASE_URL = "https://developer.nps.gov/api/v1/";
-        static string API_KEY = ""; //Add your API key here inside ""
+        static string API_KEY = "Z4dmfyUnwAdBqLmYkQG8GJjURSCaMsBFZ15vAy5L"; //Add your API key here inside ""
 
         public HomeController(ILogger<HomeController> logger)
         {
